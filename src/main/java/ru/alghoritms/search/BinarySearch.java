@@ -5,6 +5,7 @@ import java.util.stream.IntStream;
 
 /**
  * Бинарный поиск в упорядоченном массиве
+ * O(log n)
  *
  * @author a.zharov
  */
