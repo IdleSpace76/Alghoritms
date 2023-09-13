@@ -22,23 +22,23 @@ public class BinarySearch {
         }
         while (item < 1 || item > 100);
 
-        int min = 0, max = list.length - 1, iterCount = 0, mid, guess;
+        int minPos = 0, maxPos = list.length - 1, iterCount = 0, midPos, guessNum;
 
         while (true) {
             iterCount++;
-            mid = (max + min) / 2;
-            guess = list[mid];
-            if (guess == item) {
+            midPos = (maxPos + minPos) / 2;
+            guessNum = list[midPos];
+            if (guessNum == item) {
                 break;
             }
-            else if (guess > item) {
-                max = mid - 1;
+            else if (guessNum > item) {
+                maxPos = midPos - 1;
             }
             else {
-                min = mid + 1;
+                minPos = midPos + 1;
             }
         }
 
-        System.out.println("Num: " + guess + "\nIterations: " + iterCount);
+        System.out.println("Num: " + guessNum + "\nIterations: " + iterCount);
     }
 }
