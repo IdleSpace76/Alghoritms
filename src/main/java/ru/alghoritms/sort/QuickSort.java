@@ -2,7 +2,7 @@ package ru.alghoritms.sort;
 
 /**
  * Алгоритм быстрой сортировки
- * O(n)
+ * O(n * log n)
  *
  * @author a.zharov
  */
